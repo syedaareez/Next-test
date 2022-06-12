@@ -1,6 +1,8 @@
 import Link from "next/link";
 
-import { Canvas } from "@react-three/fiber";
+// import * as THREE from 'three';
+
+import { Canvas, useFrame } from "@react-three/fiber";
 import Box from "../components/Box";
 import { OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
@@ -17,6 +19,7 @@ export default function threeD(){
         <Canvas style={styleForCanVas}>
             {/* If you want to turn off zoom write enableZoom={false} inside Orbitontrols as an attribute */}
             <OrbitControls/>
+            {/* <Rig /> */}
             <ambientLight intensity={0.8} />
             <directionalLight position={[-2,5,2]} intensity={1} />
             <Stars
@@ -42,3 +45,11 @@ const styleForCanVas={
     backgroundColor:"black",
     height:"100%",
 }
+
+
+// Function for mouse movements motion effect
+// function Rig({ v = new THREE.Vector3() }) {
+//     return useFrame((state) => {
+//       state.camera.position.lerp(v.set(state.mouse.x / 2, state.mouse.y / 2, 10), 0.05)
+//     })
+//   }

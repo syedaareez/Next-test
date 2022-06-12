@@ -19,7 +19,7 @@ export default function List(){
             {myProjects.map((project,id)=>(
                 <>
                 <Link href={`${project.page}`}>
-                    <div key={id} className="flex w-[80%] p-4 m-4 text-3xl bg-white shadow-md shadow-gray-400 hover:shadow-gray-800 hover:bg-gray-800 hover:text-white cursor-pointer">
+                    <div key={id} className="flex w-[95%] m-2 sm:w-[80%] p-3 sm:m-4 text-2xl bg-white shadow-md shadow-gray-400 hover:shadow-gray-800 hover:bg-gray-800 hover:text-white cursor-pointer">
                         {project.name}
                     </div>
                 </Link>
