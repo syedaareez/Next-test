@@ -10,7 +10,7 @@ import { Stars } from "@react-three/drei";
 export default function threeD(){
     return(
         <>
-        <h1 className="absolute z-10 text-white mt-2 ml-2 p-2 text-xl border-2 border-white flex justify-center items-center font-semibold cursor-pointer hover:bg-gray-700"><Link href="/">Back</Link></h1>
+        <Link href="/"><h1 className="absolute z-10 text-white mt-2 ml-2 p-2 text-xl border-2 border-white flex justify-center items-center font-semibold cursor-pointer hover:bg-gray-700">Back</h1></Link>
 
 
         <div className="flex w-full h-screen">
