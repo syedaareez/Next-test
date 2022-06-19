@@ -28,7 +28,7 @@ export default function List(){
                 </>
             ))}
             <div className="flex w-[95%] sm:w-[80%] p-1 m-2 text-2xl">
-                Three JS Shapes
+                3D Shapes
             </div>
             {myThree.map((project,id)=>(
                 <>
